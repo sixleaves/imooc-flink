@@ -18,7 +18,7 @@ public class ConnectTest {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        ArrayList<String> l1 = new ArrayList<>(){
+        ArrayList<String> l1 = new ArrayList<String>(){
             {
                 this.add("true");
                 this.add("false");
@@ -26,7 +26,7 @@ public class ConnectTest {
         };
         DataStreamSource<String> ds1 = env.fromCollection(l1);
 
-        ArrayList<Integer> l2 = new ArrayList<>(){
+        ArrayList<Integer> l2 = new ArrayList<Integer>(){
             {
                 this.add(1);
                 this.add(2);

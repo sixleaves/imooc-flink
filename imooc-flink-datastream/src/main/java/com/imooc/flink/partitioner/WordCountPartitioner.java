@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class WordCountPartitioner implements Partitioner<String> {
 
-    private static Map<String, Integer> PARTITION = new HashMap<>() {
+    private static Map<String, Integer> PARTITION = new HashMap<String,Integer>() {
         {
             this.put("java", 1);
             this.put("python", 2);
