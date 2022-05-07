@@ -10,7 +10,7 @@ public class Access {
         this.uid = uid;
         this.product = product;
         this.os = os;
-        this.ip = ip;
+        this.setIp(ip);
         this.nu = nu;
         Channel = channel;
         this.time = time;
@@ -61,6 +61,7 @@ public class Access {
 
     public void setIp(String ip) {
         this.ip = ip;
+
     }
 
     public Integer getNu() {
@@ -150,4 +151,25 @@ public class Access {
     public String net;
     public String device;
     public String version;
+
+    public String getProvince() {
+        return province;
+    }
+
+    public void setProvince(String province) {
+        if (null == province) province = "其他";
+        this.province = province;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        if (null == city) city = "其他";
+        this.city = city;
+    }
+
+    public String province;
+    public String city;
 }
